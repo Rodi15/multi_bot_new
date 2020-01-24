@@ -1,0 +1,23 @@
+{
+  "name": "multi",
+  "version": "1.0.0",
+  "description": "noh",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodi15/multi_bot_new.git"
+  },
+  "author": "rodi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodi15/multi_bot_new/issues"
+  },
+  "homepage": "https://github.com/Rodi15/multi_bot_new#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "fs": "0.0.1-security"
+  }
+}
