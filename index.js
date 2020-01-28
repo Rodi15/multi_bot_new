@@ -15,6 +15,7 @@ fs.readdir('./events/', (err, files) => {
 });
 
 client.commands = new Discord.Collection();
+
 fs.readdir('./commands/', (err, files) => {
 	if(err) return console.log(err);
 	files.forEach(file => {
@@ -24,4 +25,5 @@ fs.readdir('./commands/', (err, files) => {
 		client.commands.set(commandName, command);
 	});
 });
+
 client.login(config.token);
