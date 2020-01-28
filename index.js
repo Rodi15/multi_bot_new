@@ -1,36 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const moment = require('moment');
 const fs = require('fs');
 const config = require('./config.json');
 
 client.config = config;
-//Задачи (Начало)
-client.on('message', message => {
-    var msgCon = message.content.toLowerCase();
-    if(msgCon === 'привет' || msgCon === 'всем доброго времени суток' || msgCon === 'шалом'){
-        message.channel.send('Приветствую тебя');
-    }   
-});
-
-client.on('message', message => {
-    var msgCon = message.content.toLowerCase();
-    if(msgCon === 'бот подкинь монету'){
-		message.channel.send('Подкинул монету...');
-		textprediction = ["Орел", "Решка"];
-		message.channel.send("Выпало: " +textprediction[Math.floor(Math.random() * textprediction.length)]);
-    }   
-});
-
-client.on('message', message => {
-    var msgCon = message.content.toLowerCase();
-    if(msgCon === 'бот скажи дату и время'){
-		moment.locale('ru')
-		message.channel.send(`**Точная дата и время:** \`${moment().format('dddd, MMMM DD YYYY, hh:mm:ss')}\``);
-    }   
-});
-
-//Задачи (конец)
 
 fs.readdir('./events/', (err, files) => {
 	if(err) return console.log(err);
