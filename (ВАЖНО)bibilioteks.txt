@@ -1,2 +1,0 @@
-﻿disordjs
-momentjs https://momentjs.com/ (установить)
